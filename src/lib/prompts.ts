@@ -17,7 +17,7 @@ const CORE_RULES = `
 - Sound like a human expert, not a textbook.
 `;
 
-export const CASE_STUDY_PROMPT = `You are a causal analyst. Generate a structured case study based on the question type.
+export const CASE_STUDY_PROMPT = `You are a causal analyst. Generate a structured causal analysis of the EXACT topic provided by the user. Do NOT pick a specific event or sub-topic unless the user explicitly requested it. If the topic is broad, analyze the broad topic as a whole.
 ${CORE_RULES}
 
 If Business: Focus on decision-making, competitive dynamics, and causality.
