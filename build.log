@@ -1,0 +1,22 @@
+
+> openmind@0.1.0 build
+> next build
+
+  Γû▓ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+unhandledRejection Error [PageNotFoundError]: Cannot find module for page: /_document
+    at getPagePath (C:\Users\11ara\github\openmind\node_modules\next\dist\server\require.js:94:15)
+    at requirePage (C:\Users\11ara\github\openmind\node_modules\next\dist\server\require.js:99:22)
+    at C:\Users\11ara\github\openmind\node_modules\next\dist\server\load-components.js:72:65
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\11ara\github\openmind\node_modules\next\dist\server\load-components.js:71:33)
+    at async Object.hasCustomGetInitialProps (C:\Users\11ara\github\openmind\node_modules\next\dist\build\utils.js:1274:24) {
+  type: 'PageNotFoundError',
+  code: 'ENOENT'
+}
