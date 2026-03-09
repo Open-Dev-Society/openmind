@@ -1,6 +1,6 @@
-# OpenMind — by Open Dev Society
+# OpenMind
 
-> **The free, open-source Case Study Engine for deep, topic-specific analysis of history, business, and science.**
+**A specialized, open-source AI engine for deep, causal analysis of business, history, and science.**
 
 [![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL%203.0-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Open Dev Society](https://img.shields.io/badge/OpenDevSociety-Initiative-gold)](https://opendevsociety.vercel.app)
@@ -8,40 +8,32 @@
 
 ---
 
-```
-INIT_OPENMIND // KERNEL_MODULE: CASE_STUDY_ENGINE
-STATUS: ACTIVE_DEPLOYMENT_V2.1
-MISSION: DEEP CAUSAL ANALYSIS. NO GENERIC ADVICE.
-```
+## Overview
+
+**OpenMind** is an analytical tool engineered to go beyond traditional search. Rather than returning a list of links or providing generic AI-generated summaries, OpenMind performs structured, topic-specific case studies on demand.
+
+Designed to force specificity, OpenMind is ideal for exploring complex topics:
+
+- **Business Strategy**: Analyze why companies succeed or fail, and identify critical decision pivot points.
+- **Historical Causality**: Examine the structural conditions that allowed events to occur and the specific triggers that set them in motion.
+- **Scientific Uncertainty**: Distinguish between empirical data and the narratives that frame public debate.
+
+*Inspired by [Dan Williams' "How AI Will Reshape Public Opinion"](https://www.conspicuouscognition.com/p/how-ai-will-reshape-public-opinion).*
 
 ---
 
-## // WHAT_IS_OPENMIND
+## Features
 
-**OpenMind** is a specialized analytical tool that goes beyond search engines. Instead of giving you a list of links, it uses AI to generate deep, structured case studies on demand. 
-
-Most AI tools provide generic advice. OpenMind is forced by its architecture to be **specific**. Use it to understand:
-
-- **Business Strategy**: Why did a company succeed or fail? What were the key decision pivot points?
-- **Historical Causality**: What structural conditions made an event possible? What were the triggers?
-- **Scientific Uncertainty**: What does the data actually say vs. how is it framed in public debate?
-
-Inspired by [Dan Williams' *How AI Will Reshape Public Opinion*](https://www.conspicuouscognition.com/p/how-ai-will-reshape-public-opinion) at Conspicuous Cognition.
+- **Intelligent Classification**: Automatically detects whether your query requires a business, historical, or scientific analytical framework.
+- **Progressive Streaming**: Utilizes the Edge Runtime to stream content progressively, providing near-instant responses.
+- **Causal Focus**: Drills into decision loops, actor incentives, and empirical gaps, avoiding superficial pro/con lists.
+- **Transparency Mode**: Every analysis includes a dedicated "Transparency Note" that outlines areas of disagreement among analysts or researchers.
 
 ---
 
-## // FEATURES
+## Technology Stack
 
-- **Intelligent Classification**: Automatically detects if your input is a business, historical, or scientific question.
-- **Progressive Streaming**: Content appears progressively using Edge Runtime for near-instant responses.
-- **Causal Focus**: Drills into decision loops, actor incentives, and empirical gaps rather than simple pro/con lists.
-- **Transparency Mode**: Every analysis includes a custom "Transparency Note" explaining where analysts or researchers disagree.
-
----
-
-## // TECH_STACK
-
-OpenMind is built with the same stack used across Open Dev Society projects — TypeScript, Next.js, and Tailwind CSS.
+OpenMind is built with a modern, performant web stack:
 
 | Layer | Technology |
 |---|---|
@@ -54,11 +46,12 @@ OpenMind is built with the same stack used across Open Dev Society projects — 
 
 ---
 
-## // QUICK_START
+## Quick Start
 
 ### Prerequisites
 
-You'll need Node.js 18+ and an Siray.ai API key. Get one at [console.siray.ai](https://console.siray.ai).
+- Node.js 18 or higher
+- A Siray.ai API key (obtainable at [console.siray.ai](https://console.siray.ai))
 
 ### 1. Clone & Install
 
@@ -68,18 +61,20 @@ cd openmind
 npm install
 ```
 
-### 2. Set up environment variables
+### 2. Configure Environment
+
+Create your local environment file:
 
 ```bash
 cp .env.example .env.local
 ```
 
-Add your key to `.env.local`:
+Add your Siray.ai token to `.env.local`:
 ```
 SIRAY_API_TOKEN=your_api_key_here
 ```
 
-### 3. Run Development
+### 3. Run Development Server
 
 ```bash
 npm run dev
@@ -87,50 +82,28 @@ npm run dev
 
 ---
 
-## // PROJECT_STRUCTURE
+## Project Structure
 
-```
+```text
 openmind/
 ├── src/
 │   ├── app/
 │   │   ├── api/
-│   │   │   ├── classify/       # Mode detection logic
-│   │   │   └── analyze/        # Streaming analysis engine
-│   │   └── page.tsx            # Redesigned Home + Stream interface
+│   │   │   ├── classify/       # Query mode detection logic
+│   │   │   └── analyze/        # Streaming analysis generator
+│   │   └── page.tsx            # Main application interface
 │   ├── components/
-│   │   ├── Masthead.tsx        # ODS-styled editorial header
-│   │   ├── TopicInput.tsx      # Unified search field
-│   │   ├── Section.tsx         # Collapsible analysis blocks
-│   │   └── Resources.tsx       # External verification links
+│   │   ├── Masthead.tsx        # Application header
+│   │   ├── TopicInput.tsx      # Unified search and input field
+│   │   ├── Section.tsx         # Collapsible analysis content blocks
+│   │   └── Resources.tsx       # External verification links rendering
 │   └── lib/
-│       ├── prompts.ts          # v2.1 Prompt Architecture
-│       └── types.ts            # Analytical data structures
+│       ├── prompts.ts          # AI prompt architecture
+│       └── types.ts            # Core data structures and interfaces
 ```
 
 ---
 
-## // ROADMAP
+## License
 
-**v1.0 — Manipulation Detector** *(Completed)*  
-**v2.0 — Case Study Engine** *(Completed)*  
-**v2.1 — Streamlined Analytical Focus** *(Current)*  
-
-**Future: v3.0 — Multilingual Support**  
-Full i18n support. Deep analysis shouldn't be locked to English speakers.
-
----
-
-## // CONTRIBUTING
-
-Read the full [CONTRIBUTING.md](CONTRIBUTING.md) to get started. Look for issues tagged `good first issue` or drop a message in the [ODS Discord](https://discord.gg/9xywA3pj).
-
----
-
-## // LICENSE
-
-OpenMind is released under the **AGPL-3.0 License**.
-
-```
-OPEN_DEV_SOCIETY — EST. 2024
-DEFAULT_TO_OPEN // PERMISSIONLESS_ACCESS // RAPID_ITERATION
-```
+OpenMind is open-source software released under the **AGPL-3.0 License**. Developed and maintained by the Open Dev Society.
