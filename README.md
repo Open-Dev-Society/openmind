@@ -4,7 +4,7 @@
 
 [![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL%203.0-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Open Dev Society](https://img.shields.io/badge/OpenDevSociety-Initiative-gold)](https://opendevsociety.vercel.app)
-[![Built With](https://img.shields.io/badge/Built%20With-Next.js%20%2B%20Siray.ai-black)](https://nextjs.org)
+[![Built With](https://img.shields.io/badge/Built%20With-Next.js%20%2B%20Siray.ai-black)](https://siray.ai)
 
 ---
 

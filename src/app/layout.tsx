@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     "A specialized epistemic lab for deep causal analysis of business, history, and science. Free, open-source, and AIO-enabled.",
   keywords: ["Case Study", "Causal Analysis", "Open Source", "Epistemic", "Business Strategy", "Historical Narratives"],
   authors: [{ name: "Open Dev Society", url: "https://opendevsociety.vercel.app" }],
-  metadataBase: new URL("https://opendevsociety.vercel.app"),
+  metadataBase: new URL("https://openmind-ods.vercel.app"),
   openGraph: {
     title: "OpenMind — Case Study Engine",
     description: "Deep, topic-specific analysis of the world's most complex narratives.",
-    url: "https://opendevsociety.vercel.app",
+    url: "https://openmind-ods.vercel.app",
     siteName: "OpenMind",
     images: [
       {
