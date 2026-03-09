@@ -147,7 +147,7 @@ export default function HomePage() {
     }
   };
 
-  const shareUrl = "https://opendevsociety.vercel.app";
+  const shareUrl = "https://openmind-ods.vercel.app/";
   const shareTitle = result ? `I just ran a deep causal analysis on "${result.topic_clean}" using OpenMind.\n\n` : "";
 
   const shareOnX = () => {
